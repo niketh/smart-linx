@@ -1,0 +1,21 @@
+<ion-view view-title="Home">
+    <ion-content class="padding">
+        <div class="card" ng-repeat="offer in offers">
+            <div class="item item-avatar">
+                <img ng-src="{{offer.picUrl}}">
+                <h2>{{offer.name}}</h2>
+                <p>{{offer.lastText}}</p>
+            </div>
+
+            <div class="item item-body">
+                <img class="full-image" ng-src="{{offer.picUrl}}">
+            </div>
+            <a class="item item-icon-left assertive" ui-sref="tab.shop">
+                <i class="icon ion-music-note"></i>
+                SHOP NOW >
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
+
+

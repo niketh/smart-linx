@@ -1,0 +1,32 @@
+<ion-view view-title="Shop">
+    <ion-content class="padding">
+        <div class="list card" ng-repeat="product in products">
+            <div class="item item-avatar">
+                <img ng-src="{{product.picUrl}}">
+                <h2>{{product.name}}</h2>
+                <p>{{product.lastText}}</p>
+            </div>
+            <div class="item item-image">
+                <img ng-src="{{product.picUrl}}">
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-thumbsup"></i>
+                    Like
+                </a>
+                <a class="tab-item" ui-sref="tab.checkout({id:product.id, fname:fname, lname:lname})">
+                    <i class="icon ion-chatbox"></i>
+                    Buy
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
+
+
